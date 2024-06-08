@@ -13,6 +13,9 @@
 		431104A52C1441F700422179 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 431104A42C1441F700422179 /* Base */; };
 		431104A72C1441F900422179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 431104A62C1441F900422179 /* Assets.xcassets */; };
 		431104AA2C1441F900422179 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 431104A92C1441F900422179 /* Base */; };
+		431104B32C144C0900422179 /* CountryDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 431104B22C144C0900422179 /* CountryDetailsViewController.xib */; };
+		431104B62C144F4800422179 /* StatePlacesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 431104B52C144F4800422179 /* StatePlacesViewController.xib */; };
+		431104B82C14514F00422179 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431104B72C14514F00422179 /* CustomCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		431104A62C1441F900422179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		431104A92C1441F900422179 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		431104AB2C1441F900422179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		431104B22C144C0900422179 /* CountryDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryDetailsViewController.xib; sourceTree = "<group>"; };
+		431104B52C144F4800422179 /* StatePlacesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatePlacesViewController.xib; sourceTree = "<group>"; };
+		431104B72C14514F00422179 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomCollectionViewCell.swift; path = ../../../../../Applications/CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,8 @@
 		4311049C2C1441F700422179 /* CountrysCurrencyApp */ = {
 			isa = PBXGroup;
 			children = (
+				431104B42C144EF700422179 /* StatePlaces */,
+				431104B12C144B9300422179 /* CountryDetails */,
 				4311049D2C1441F700422179 /* AppDelegate.swift */,
 				4311049F2C1441F700422179 /* SceneDelegate.swift */,
 				431104A12C1441F700422179 /* ViewController.swift */,
@@ -63,8 +71,25 @@
 				431104A62C1441F900422179 /* Assets.xcassets */,
 				431104A82C1441F900422179 /* LaunchScreen.storyboard */,
 				431104AB2C1441F900422179 /* Info.plist */,
+				431104B72C14514F00422179 /* CustomCollectionViewCell.swift */,
 			);
 			path = CountrysCurrencyApp;
+			sourceTree = "<group>";
+		};
+		431104B12C144B9300422179 /* CountryDetails */ = {
+			isa = PBXGroup;
+			children = (
+				431104B22C144C0900422179 /* CountryDetailsViewController.xib */,
+			);
+			path = CountryDetails;
+			sourceTree = "<group>";
+		};
+		431104B42C144EF700422179 /* StatePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				431104B52C144F4800422179 /* StatePlacesViewController.xib */,
+			);
+			path = StatePlaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +150,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				431104B62C144F4800422179 /* StatePlacesViewController.xib in Resources */,
+				431104B32C144C0900422179 /* CountryDetailsViewController.xib in Resources */,
 				431104A72C1441F900422179 /* Assets.xcassets in Resources */,
 				431104AA2C1441F900422179 /* Base in Resources */,
 				431104A52C1441F700422179 /* Base in Resources */,
@@ -141,6 +168,7 @@
 				431104A22C1441F700422179 /* ViewController.swift in Sources */,
 				4311049E2C1441F700422179 /* AppDelegate.swift in Sources */,
 				431104A02C1441F700422179 /* SceneDelegate.swift in Sources */,
+				431104B82C14514F00422179 /* CustomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,9 +334,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AngelLopez.CountrysCurrencyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -333,9 +365,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = AngelLopez.CountrysCurrencyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
