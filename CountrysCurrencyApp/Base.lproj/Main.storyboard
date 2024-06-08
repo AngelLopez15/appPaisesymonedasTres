@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KLy-gZ-C1B">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KLy-gZ-C1B">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Countrys-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CountrysCurrencyApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vJu-kb-zgC">
-                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pa9-cD-R5D">
                                     <size key="itemSize" width="163" height="217"/>
@@ -27,7 +27,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellCountry" id="bQ0-5S-xC6">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellCountry" id="bQ0-5S-xC6" customClass="CustomCollectionViewCell" customModule="CountrysCurrencyApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="163" height="217"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gNU-YR-eOe">
@@ -48,6 +48,10 @@
                                             </subviews>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="163" height="217"/>
+                                        <connections>
+                                            <outlet property="imageView" destination="sJW-M8-mNP" id="d7W-1d-Xmx"/>
+                                            <outlet property="label" destination="18c-Os-POo" id="jSu-9S-2Ps"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -61,14 +65,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vJu-kb-zgC" secondAttribute="trailing" id="Oph-UO-BBS"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Countrys" image="flag.fill" catalog="system" id="sOs-S1-rr2"/>
+                    <navigationItem key="navigationItem" id="n16-Oq-K0n"/>
                     <connections>
                         <outlet property="collectionView" destination="vJu-kb-zgC" id="gDy-Ah-jAn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="976.33587786259534" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="1903.0534351145038" y="-27.464788732394368"/>
         </scene>
         <!--Currency-->
         <scene sceneID="7RY-sa-gU6">
@@ -108,17 +112,37 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="KLy-gZ-C1B" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zv0-36-cAn">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="As7-zg-7PE"/>
+                        <segue destination="Kpi-gs-ZPc" kind="relationship" relationship="viewControllers" id="As7-zg-7PE"/>
                         <segue destination="b9Y-qx-9Fc" kind="relationship" relationship="viewControllers" id="TqE-QI-cb8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="knf-xH-oPy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="49.618320610687022" y="-27.464788732394368"/>
+        </scene>
+        <!--Countrys-->
+        <scene sceneID="qK1-hp-8Ef">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kpi-gs-ZPc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Countrys" image="flag.fill" catalog="system" id="sOs-S1-rr2"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="h73-c2-6nQ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zGI-al-Kxg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LeQ-5v-CbE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976.33587786259534" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>
