@@ -15,6 +15,14 @@
 		431104AA2C1441F900422179 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 431104A92C1441F900422179 /* Base */; };
 		431104B32C144C0900422179 /* CountriesDetailModelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 431104B22C144C0900422179 /* CountriesDetailModelViewController.xib */; };
 		431104B62C144F4800422179 /* StatePlacesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 431104B52C144F4800422179 /* StatePlacesViewController.xib */; };
+		43BF12F42C1C22C700A55E8E /* CapitalsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF12F32C1C22C700A55E8E /* CapitalsDTO.swift */; };
+		43BF12F62C1C28D400A55E8E /* Capital.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF12F52C1C28D400A55E8E /* Capital.swift */; };
+		43BF12F82C1C293100A55E8E /* CapitalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43BF12F72C1C293100A55E8E /* CapitalModel.swift */; };
+		43D4280F2C1C9611003AB24C /* StatePlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D4280E2C1C9611003AB24C /* StatePlacesViewController.swift */; };
+		43D428112C1CA07C003AB24C /* CurrencyDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D428102C1CA07C003AB24C /* CurrencyDTO.swift */; };
+		43D428132C1CA0D3003AB24C /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D428122C1CA0D3003AB24C /* Currency.swift */; };
+		43D428152C1CA10F003AB24C /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D428142C1CA10F003AB24C /* CurrencyModel.swift */; };
+		43D428172C1CBF86003AB24C /* CambioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D428162C1CBF86003AB24C /* CambioViewController.swift */; };
 		5551DA582C14BD78002D197E /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551DA572C14BD78002D197E /* CustomCollectionViewCell.swift */; };
 		5551DA5D2C14C0A4002D197E /* Flags.json in Resources */ = {isa = PBXBuildFile; fileRef = 5551DA5C2C14C0A4002D197E /* Flags.json */; };
 		5551DA5F2C14C0E1002D197E /* PointsOfInterest.json in Resources */ = {isa = PBXBuildFile; fileRef = 5551DA5E2C14C0E1002D197E /* PointsOfInterest.json */; };
@@ -44,6 +52,14 @@
 		431104AB2C1441F900422179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		431104B22C144C0900422179 /* CountriesDetailModelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountriesDetailModelViewController.xib; sourceTree = "<group>"; };
 		431104B52C144F4800422179 /* StatePlacesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StatePlacesViewController.xib; sourceTree = "<group>"; };
+		43BF12F32C1C22C700A55E8E /* CapitalsDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalsDTO.swift; sourceTree = "<group>"; };
+		43BF12F52C1C28D400A55E8E /* Capital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capital.swift; sourceTree = "<group>"; };
+		43BF12F72C1C293100A55E8E /* CapitalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalModel.swift; sourceTree = "<group>"; };
+		43D4280E2C1C9611003AB24C /* StatePlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePlacesViewController.swift; sourceTree = "<group>"; };
+		43D428102C1CA07C003AB24C /* CurrencyDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyDTO.swift; sourceTree = "<group>"; };
+		43D428122C1CA0D3003AB24C /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		43D428142C1CA10F003AB24C /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
+		43D428162C1CBF86003AB24C /* CambioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CambioViewController.swift; sourceTree = "<group>"; };
 		5551DA572C14BD78002D197E /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		5551DA5C2C14C0A4002D197E /* Flags.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Flags.json; sourceTree = "<group>"; };
 		5551DA5E2C14C0E1002D197E /* PointsOfInterest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PointsOfInterest.json; path = ../../../../../Downloads/Paises/PointsOfInterest.json; sourceTree = "<group>"; };
@@ -100,6 +116,7 @@
 				431104B42C144EF700422179 /* StatePlaces */,
 				4311049D2C1441F700422179 /* AppDelegate.swift */,
 				4311049F2C1441F700422179 /* SceneDelegate.swift */,
+				43D428162C1CBF86003AB24C /* CambioViewController.swift */,
 				431104A12C1441F700422179 /* ViewController.swift */,
 				431104A32C1441F700422179 /* Main.storyboard */,
 				431104A62C1441F900422179 /* Assets.xcassets */,
@@ -113,6 +130,7 @@
 		431104B42C144EF700422179 /* StatePlaces */ = {
 			isa = PBXGroup;
 			children = (
+				43D4280E2C1C9611003AB24C /* StatePlacesViewController.swift */,
 				431104B52C144F4800422179 /* StatePlacesViewController.xib */,
 			);
 			path = StatePlaces;
@@ -146,6 +164,8 @@
 			children = (
 				5551DA6D2C14C26D002D197E /* FlagsDTO.swift */,
 				5551DA772C14D29A002D197E /* CountriesDetailsDTO.swift */,
+				43BF12F32C1C22C700A55E8E /* CapitalsDTO.swift */,
+				43D428102C1CA07C003AB24C /* CurrencyDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -171,6 +191,8 @@
 			children = (
 				5551DA752C14C3CD002D197E /* Flag.swift */,
 				5551DA792C14D632002D197E /* CountriesDetail.swift */,
+				43BF12F52C1C28D400A55E8E /* Capital.swift */,
+				43D428122C1CA0D3003AB24C /* Currency.swift */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -179,6 +201,8 @@
 			isa = PBXGroup;
 			children = (
 				5551DA7C2C14D6A2002D197E /* CountriesDetailModel.swift */,
+				43D428142C1CA10F003AB24C /* CurrencyModel.swift */,
+				43BF12F72C1C293100A55E8E /* CapitalModel.swift */,
 				5551DA7E2C14D9C1002D197E /* CountriesDetailModelViewController.swift */,
 				431104B22C144C0900422179 /* CountriesDetailModelViewController.xib */,
 			);
@@ -265,7 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43D428132C1CA0D3003AB24C /* Currency.swift in Sources */,
+				43BF12F62C1C28D400A55E8E /* Capital.swift in Sources */,
 				5551DA6C2C14C18E002D197E /* Extensions.swift in Sources */,
+				43D428172C1CBF86003AB24C /* CambioViewController.swift in Sources */,
+				43D4280F2C1C9611003AB24C /* StatePlacesViewController.swift in Sources */,
 				5551DA7A2C14D632002D197E /* CountriesDetail.swift in Sources */,
 				5551DA7F2C14D9C1002D197E /* CountriesDetailModelViewController.swift in Sources */,
 				431104A22C1441F700422179 /* ViewController.swift in Sources */,
@@ -273,10 +301,14 @@
 				5551DA762C14C3CD002D197E /* Flag.swift in Sources */,
 				5551DA7D2C14D6A2002D197E /* CountriesDetailModel.swift in Sources */,
 				5551DA782C14D29A002D197E /* CountriesDetailsDTO.swift in Sources */,
+				43BF12F82C1C293100A55E8E /* CapitalModel.swift in Sources */,
 				5551DA712C14C2F3002D197E /* FlagsModel.swift in Sources */,
+				43D428112C1CA07C003AB24C /* CurrencyDTO.swift in Sources */,
+				43BF12F42C1C22C700A55E8E /* CapitalsDTO.swift in Sources */,
 				431104A02C1441F700422179 /* SceneDelegate.swift in Sources */,
 				5551DA582C14BD78002D197E /* CustomCollectionViewCell.swift in Sources */,
 				5551DA6E2C14C26D002D197E /* FlagsDTO.swift in Sources */,
+				43D428152C1CA10F003AB24C /* CurrencyModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

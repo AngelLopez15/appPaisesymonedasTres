@@ -8,13 +8,29 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatePlacesViewController" customModule="CountrysCurrencyApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="XPe-GU-dHY" id="lMe-jT-jPY"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="XPe-GU-dHY">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZHZ-g8-bta">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="Qoa-wS-zsv"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ZHZ-g8-bta" firstAttribute="leading" secondItem="Qoa-wS-zsv" secondAttribute="leading" id="3WB-Ib-vbW"/>
+                <constraint firstItem="Qoa-wS-zsv" firstAttribute="bottom" secondItem="ZHZ-g8-bta" secondAttribute="bottom" id="4pD-u2-9sX"/>
+                <constraint firstItem="ZHZ-g8-bta" firstAttribute="top" secondItem="Qoa-wS-zsv" secondAttribute="top" id="B29-13-U8I"/>
+                <constraint firstItem="Qoa-wS-zsv" firstAttribute="trailing" secondItem="ZHZ-g8-bta" secondAttribute="trailing" id="pcU-gT-5ZX"/>
+            </constraints>
             <point key="canvasLocation" x="216" y="34"/>
         </view>
     </objects>
