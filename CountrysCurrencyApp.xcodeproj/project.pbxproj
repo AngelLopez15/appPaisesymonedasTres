@@ -23,6 +23,7 @@
 		43D428132C1CA0D3003AB24C /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D428122C1CA0D3003AB24C /* Currency.swift */; };
 		43D428152C1CA10F003AB24C /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D428142C1CA10F003AB24C /* CurrencyModel.swift */; };
 		43D428172C1CBF86003AB24C /* CambioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43D428162C1CBF86003AB24C /* CambioViewController.swift */; };
+		43DECD422C1D82CA0006A8CF /* PointsInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DECD412C1D82CA0006A8CF /* PointsInterest.swift */; };
 		5551DA582C14BD78002D197E /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5551DA572C14BD78002D197E /* CustomCollectionViewCell.swift */; };
 		5551DA5D2C14C0A4002D197E /* Flags.json in Resources */ = {isa = PBXBuildFile; fileRef = 5551DA5C2C14C0A4002D197E /* Flags.json */; };
 		5551DA5F2C14C0E1002D197E /* PointsOfInterest.json in Resources */ = {isa = PBXBuildFile; fileRef = 5551DA5E2C14C0E1002D197E /* PointsOfInterest.json */; };
@@ -60,6 +61,7 @@
 		43D428122C1CA0D3003AB24C /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		43D428142C1CA10F003AB24C /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
 		43D428162C1CBF86003AB24C /* CambioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CambioViewController.swift; sourceTree = "<group>"; };
+		43DECD412C1D82CA0006A8CF /* PointsInterest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsInterest.swift; sourceTree = "<group>"; };
 		5551DA572C14BD78002D197E /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		5551DA5C2C14C0A4002D197E /* Flags.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Flags.json; sourceTree = "<group>"; };
 		5551DA5E2C14C0E1002D197E /* PointsOfInterest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PointsOfInterest.json; path = ../../../../../Downloads/Paises/PointsOfInterest.json; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				431104A82C1441F900422179 /* LaunchScreen.storyboard */,
 				431104AB2C1441F900422179 /* Info.plist */,
 				5551DA572C14BD78002D197E /* CustomCollectionViewCell.swift */,
+				43DECD412C1D82CA0006A8CF /* PointsInterest.swift */,
 			);
 			path = CountrysCurrencyApp;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				431104A02C1441F700422179 /* SceneDelegate.swift in Sources */,
 				5551DA582C14BD78002D197E /* CustomCollectionViewCell.swift in Sources */,
 				5551DA6E2C14C26D002D197E /* FlagsDTO.swift in Sources */,
+				43DECD422C1D82CA0006A8CF /* PointsInterest.swift in Sources */,
 				43D428152C1CA10F003AB24C /* CurrencyModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

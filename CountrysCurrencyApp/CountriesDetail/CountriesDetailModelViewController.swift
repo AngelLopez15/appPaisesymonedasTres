@@ -108,6 +108,7 @@ extension CountriesDetailModelViewController:UITableViewDelegate {
         let selectedState = filteredCapitals[indexPath.row]
         let statePlacesViewController = StatePlacesViewController(nibName: "StatePlacesViewController", bundle: nil)
         statePlacesViewController.selectedState = selectedState
+        statePlacesViewController.currentCountry = country
         navigationController?.pushViewController(statePlacesViewController, animated: true)
     }
 }

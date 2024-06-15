@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StatePlacesViewController" customModule="CountrysCurrencyApp" customModuleProvider="target">
             <connections>
+                <outlet property="placesTable" destination="ZHZ-g8-bta" id="3Es-oX-y8M"/>
                 <outlet property="view" destination="XPe-GU-dHY" id="lMe-jT-jPY"/>
             </connections>
         </placeholder>

@@ -25,7 +25,7 @@ class CambioViewController: UIViewController, UIPickerViewDelegate, UIPickerView
             pickerOne.dataSource = self
             pickerTwo.delegate = self
             pickerTwo.dataSource = self
-            
+            labelResult.text = ""
             cargarDatos()
         }
         
